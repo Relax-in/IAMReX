@@ -1,0 +1,592 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Getting Started &mdash; IAMReX 0.1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=01f34227"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Validation Cases" href="Results.html" />
+    <link rel="prev" title="Introduction" href="Introduction_Chapter.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            IAMReX
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Introduction_Chapter.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#downloading-the-code">Downloading the code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#building-the-code">Building the code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#running-the-code">Running the code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#key-parameters">Key parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Results.html">Validation Cases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Acknowledgements.html">Acknowledgements</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">References:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">IAMReX</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Getting Started</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/Getting_Started.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="getting-started">
+<span id="chap-gettingstarted"></span><h1>Getting Started<a class="headerlink" href="#getting-started" title="Link to this heading"></a></h1>
+<p>This section walks you through a brief introduction to using IAMReX.</p>
+<section id="downloading-the-code">
+<h2>Downloading the code<a class="headerlink" href="#downloading-the-code" title="Link to this heading"></a></h2>
+<p>IAMReX is built on top of the AMReX framework. In order to run
+IAMReX, you must download separate git modules for IAMReX, AMReX
+and AMReX-Hydro.</p>
+<p>First, make sure that git is installed on your machine.</p>
+<ol class="arabic">
+<li><p>Download the AMReX repository by typing:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/ruohai0925/amrex.git
+</pre></div>
+</div>
+<p>This will create a folder called <code class="docutils literal notranslate"><span class="pre">amrex/</span></code> on your machine.</p>
+</li>
+<li><p>Download the AMReX-Hydro repository by typing:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/ruohai0925/AMReX-Hydro.git
+</pre></div>
+</div>
+<p>This will create a folder called <code class="docutils literal notranslate"><span class="pre">AMReX-Hydro/</span></code> on your machine.</p>
+</li>
+<li><p>Download the IAMReX repository by typing:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/ruohai0925/IAMReX.git
+</pre></div>
+</div>
+<p>This will create a folder called <code class="docutils literal notranslate"><span class="pre">IAMReX/</span></code> on your machine.</p>
+</li>
+</ol>
+<p>After cloning, one will have three folder in your current directory: <code class="docutils literal notranslate"><span class="pre">AMReX</span></code>, <code class="docutils literal notranslate"><span class="pre">AMReX-Hydro</span></code>, <code class="docutils literal notranslate"><span class="pre">IAMReX</span></code>.</p>
+</section>
+<section id="building-the-code">
+<h2>Building the code<a class="headerlink" href="#building-the-code" title="Link to this heading"></a></h2>
+<p>We recommend using the GNU compiler to compile the program on the Linux platform. The compilation process requires preparing a make file, which you can find in the example folder under Tutorials. It is strongly recommended to use the GNUmakefile prepared in advance by the example. If you want to know more about the configuration information of the compilation parameters, you can check it in the <a class="reference external" href="https://amrex-codes.github.io/amrex/docs_html/BuildingAMReX.html">AMReX building</a>.</p>
+<p>For example, if we want to compile in the <code class="docutils literal notranslate"><span class="pre">FlowPastSphere</span></code>, refer to the following steps:</p>
+<ol class="arabic">
+<li><p>cd to the FlowPastSphere directory</p>
+<blockquote>
+<div><div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>IAMReX/Tutorials/FlowPastSphere
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Modify compilation parameters in GNUmakefile.</p>
+<blockquote>
+<div><p>The compilation parameters depend on your computing platform. If you use MPI to run your program, then set USE_MPI = TRUE. If you are running the program with Nvidia GPU(CUDA), then set USE_CUDA = TRUE. When using GPU runtime, please make sure your CUDA environment is ok.</p>
+</div></blockquote>
+</li>
+<li><p>Compile</p>
+<blockquote>
+<div><p>With the above settings, you can compile the program:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>make
+</pre></div>
+</div>
+<p>You can add parameters after make, such as -f your_make_file to customize your parameter file, and -j 8 to specify 8 threads to participate in the compilation.</p>
+</div></blockquote>
+</li>
+</ol>
+<p>If the compilation is successful, an executable file will be generated. Usually the executable file is named in the following format:amr[DIM].[Compiler manufacturers].[computing platform].[is Debug].ex. The executable file name of the Release version of the three-dimensional compiled using the GNU compiler in the MPI environment is: amr3d.GNU.MPI.ex.</p>
+</section>
+<section id="running-the-code">
+<h2>Running the code<a class="headerlink" href="#running-the-code" title="Link to this heading"></a></h2>
+<p>You should takes an input file as its first command-line argument. The file may contain a set of parameter definitions that will overrides defaults set in the code. In the <code class="docutils literal notranslate"><span class="pre">FlowPastSphere</span></code>, you can find a file named <code class="docutils literal notranslate"><span class="pre">inputs.3d.flow_past_sphere</span></code>, run:</p>
+<blockquote>
+<div><div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>./amr3d.GNU.MPI.ex<span class="w"> </span>inputs.3d.flow_past_sphere
+</pre></div>
+</div>
+</div></blockquote>
+<p>If you use <code class="docutils literal notranslate"><span class="pre">MPI</span></code> to run your program, you can type:</p>
+<blockquote>
+<div><div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>mpirun<span class="w"> </span>-np<span class="w"> </span>how_many_threads<span class="w"> </span>amr3d.GNU.MPI.ex<span class="w"> </span>inputs.3d.flow_past_sphere
+</pre></div>
+</div>
+</div></blockquote>
+<p>This code typically generates subfolders in the current folder that are named <code class="docutils literal notranslate"><span class="pre">plt00000</span></code>, <code class="docutils literal notranslate"><span class="pre">plt00010</span></code>, etc, and <code class="docutils literal notranslate"><span class="pre">chk00000</span></code>, <code class="docutils literal notranslate"><span class="pre">chk00010</span></code>, etc. These are called plotfiles and checkpoint files. The plotfiles are used for visualization of derived fields; the checkpoint files are used for restarting the code.</p>
+</section>
+<section id="key-parameters">
+<h2>Key parameters<a class="headerlink" href="#key-parameters" title="Link to this heading"></a></h2>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>you can find more parameters in <a class="reference external" href="https://amrex-fluids.github.io/IAMR/SetupAndRunning.html">IAMR guide</a>.</p>
+</div>
+<table class="docutils align-default" id="id1">
+<caption><span class="caption-text">NavierStokes parameters</span><a class="headerlink" href="#id1" title="Link to this table"></a></caption>
+<colgroup>
+<col style="width: 22.2%" />
+<col style="width: 55.6%" />
+<col style="width: 11.1%" />
+<col style="width: 11.1%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Default</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>do_diffused_ib</p></td>
+<td><p>enable IBM</p></td>
+<td><p>Int</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>fluid_rho</p></td>
+<td><p>density of fluid</p></td>
+<td><p>Real</p></td>
+<td><p>1.0</p></td>
+</tr>
+</tbody>
+</table>
+<p>The above parameters are designed for the immersed boundary (IB) method. Additionally, the <code class="docutils literal notranslate"><span class="pre">particle.input</span></code> flag (such as <code class="docutils literal notranslate"><span class="pre">particle_inputs</span></code>) must be specified to define IB-related parameters. The program will query these parameters through this flag. The specific parameters include the following:</p>
+<table class="docutils align-default" id="id2">
+<caption><span class="caption-text">DiffusedIB parameters</span><a class="headerlink" href="#id2" title="Link to this table"></a></caption>
+<colgroup>
+<col style="width: 22.2%" />
+<col style="width: 55.6%" />
+<col style="width: 11.1%" />
+<col style="width: 11.1%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Default</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>x</p></td>
+<td><p>particle x position</p></td>
+<td><p>Real Array</p></td>
+<td><p>0.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>y</p></td>
+<td><p>particle y position</p></td>
+<td><p>Real Array</p></td>
+<td><p>0.0</p></td>
+</tr>
+<tr class="row-even"><td><p>z</p></td>
+<td><p>particle z position</p></td>
+<td><p>Real Array</p></td>
+<td><p>0.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>rho</p></td>
+<td><p>density of particles</p></td>
+<td><p>Real Array</p></td>
+<td><p>1.0</p></td>
+</tr>
+<tr class="row-even"><td><p>radius</p></td>
+<td><p>radius of particles</p></td>
+<td><p>Real Array</p></td>
+<td><p>0.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>velocity_x</p></td>
+<td><p>The initial velocity of the particles in the x direction</p></td>
+<td><p>Real Array</p></td>
+<td><p>0.0</p></td>
+</tr>
+<tr class="row-even"><td><p>velocity_y</p></td>
+<td><p>The initial velocity of the particles in the y direction</p></td>
+<td><p>Real Array</p></td>
+<td><p>0.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>velocity_z</p></td>
+<td><p>The initial velocity of the particles in the z direction</p></td>
+<td><p>Real Array</p></td>
+<td><p>0.0</p></td>
+</tr>
+<tr class="row-even"><td><p>omega_x</p></td>
+<td><p>The initial angular velocity of the particle around the x-axis</p></td>
+<td><p>Real Array</p></td>
+<td><p>0.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>omega_y</p></td>
+<td><p>The initial angular velocity of the particle around the y-axis</p></td>
+<td><p>Real Array</p></td>
+<td><p>0.0</p></td>
+</tr>
+<tr class="row-even"><td><p>omega_z</p></td>
+<td><p>The initial angular velocity of the particle around the z-axis</p></td>
+<td><p>Real Array</p></td>
+<td><p>0.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>TLX</p></td>
+<td><p>Particle freedom in x-direction</p></td>
+<td><p>Int Array</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-even"><td><p>TLY</p></td>
+<td><p>Particle freedom in y-direction</p></td>
+<td><p>Int Array</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>TLZ</p></td>
+<td><p>Particle freedom in z-direction</p></td>
+<td><p>Int Array</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-even"><td><p>RLX</p></td>
+<td><p>Particle rotation about x-axis</p></td>
+<td><p>Int Array</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>RLY</p></td>
+<td><p>Particle rotation about y-axis</p></td>
+<td><p>Int Array</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-even"><td><p>RLZ</p></td>
+<td><p>Particle rotation about z-axis</p></td>
+<td><p>Int Array</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>RD</p></td>
+<td><p>particle retraction distance</p></td>
+<td><p>Real</p></td>
+<td><p>0.0</p></td>
+</tr>
+<tr class="row-even"><td><p>write_freq</p></td>
+<td><p>How many steps to export the particle information</p></td>
+<td><p>Int</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>LOOP_NS</p></td>
+<td><p>Ns loop time</p></td>
+<td><p>Int</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><p>LOOP_SOLID</p></td>
+<td><p>particle update steps</p></td>
+<td><p>Int</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>start_step</p></td>
+<td><p>How much steps does it take for the particles to move</p></td>
+<td><p>Int</p></td>
+<td><p>-1</p></td>
+</tr>
+<tr class="row-even"><td><p>collision_model</p></td>
+<td><p>particle collision model</p></td>
+<td><p>Int</p></td>
+<td><p>1.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>verbose</p></td>
+<td><p>Whether to output debug information</p></td>
+<td><p>Int</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-even"><td><p>init</p></td>
+<td><p>particle init file path</p></td>
+<td><p>file path</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Among the above parameters, array-type parameters are used to specify parameters for multiple particles individually, or define particle positions via an init file (e.g., a precomputed position data file).
+If particle positions are provided through an external file, other array-type parameters only need to provide a single value, which will be applied to all particles uniformly.</p>
+<p>example inputs file as blow :</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#*******************************************************************************</span>
+<span class="c1"># INPUTS.3D.FLOW_PAST_SPHERE</span>
+<span class="c1">#*******************************************************************************</span>
+
+<span class="c1">#NOTE: You may set *either* max_step or stop_time, or you may set them both.</span>
+
+<span class="c1"># Maximum number of coarse grid timesteps to be taken, if stop_time is</span>
+<span class="c1">#  not reached first.</span>
+<span class="n">max_step</span>            <span class="o">=</span> <span class="mi">2</span>
+
+<span class="c1"># Time at which calculation stops, if max_step is not reached first.</span>
+<span class="n">stop_time</span>           <span class="o">=</span> <span class="mf">100.0</span>
+
+<span class="n">ns</span><span class="o">.</span><span class="n">fixed_dt</span>     <span class="o">=</span> <span class="mf">0.01</span>
+<span class="n">ns</span><span class="o">.</span><span class="n">cfl</span> <span class="o">=</span> <span class="mf">0.3</span>
+<span class="n">ns</span><span class="o">.</span><span class="n">init_iter</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="c1"># Diffused IB input file</span>
+<span class="n">particle</span><span class="o">.</span><span class="n">input</span> <span class="o">=</span> <span class="n">particle_inputs</span>
+
+<span class="c1"># Refinement criterion, use vorticity and presence of tracer</span>
+<span class="n">amr</span><span class="o">.</span><span class="n">refinement_indicators</span> <span class="o">=</span> <span class="n">tracer</span>
+
+<span class="n">amr</span><span class="o">.</span><span class="n">max_level</span>               <span class="o">=</span> <span class="mi">0</span> <span class="c1"># maximum number of levels of refinement</span>
+<span class="c1"># amr.tracer.value_greater = 0.1</span>
+<span class="c1"># amr.tracer.value_less = 1.1</span>
+<span class="n">amr</span><span class="o">.</span><span class="n">tracer</span><span class="o">.</span><span class="n">field_name</span> <span class="o">=</span> <span class="n">tracer</span>
+<span class="n">amr</span><span class="o">.</span><span class="n">tracer</span><span class="o">.</span><span class="n">in_box_lo</span> <span class="o">=</span> <span class="mf">0.5</span> <span class="mf">0.5</span> <span class="mf">0.5</span>
+<span class="n">amr</span><span class="o">.</span><span class="n">tracer</span><span class="o">.</span><span class="n">in_box_hi</span> <span class="o">=</span> <span class="mf">1.5</span> <span class="mf">1.5</span> <span class="mf">1.5</span>
+
+<span class="n">amr</span><span class="o">.</span><span class="n">blocking_factor</span>     <span class="o">=</span> <span class="mi">8</span>
+
+<span class="c1">#*******************************************************************************</span>
+
+<span class="c1"># Number of cells in each coordinate direction at the coarsest level</span>
+<span class="c1"># amr.n_cell                = 16 8 8</span>
+<span class="n">amr</span><span class="o">.</span><span class="n">n_cell</span>          <span class="o">=</span> <span class="mi">256</span> <span class="mi">128</span> <span class="mi">128</span>
+<span class="c1"># amr.n_cell                = 288 128 128</span>
+<span class="n">amr</span><span class="o">.</span><span class="n">max_grid_size</span>   <span class="o">=</span> <span class="mi">16</span>
+<span class="c1"># amr.max_grid_size = 32</span>
+
+<span class="c1">#*******************************************************************************</span>
+
+<span class="c1"># Interval (in number of level l timesteps) between regridding</span>
+<span class="n">amr</span><span class="o">.</span><span class="n">regrid_int</span>              <span class="o">=</span> <span class="mi">1</span> <span class="c1"># regrid_int</span>
+
+<span class="c1">#*******************************************************************************</span>
+
+<span class="c1"># Refinement ratio as a function of level</span>
+<span class="n">amr</span><span class="o">.</span><span class="n">ref_ratio</span>               <span class="o">=</span> <span class="mi">2</span> <span class="mi">2</span> <span class="mi">2</span> <span class="mi">2</span>
+
+<span class="c1">#*******************************************************************************</span>
+
+<span class="c1"># Sets the &quot;NavierStokes&quot; code to be verbose</span>
+<span class="n">ns</span><span class="o">.</span><span class="n">v</span>                    <span class="o">=</span> <span class="mi">1</span>
+<span class="n">nodal_proj</span><span class="o">.</span><span class="n">verbose</span>      <span class="o">=</span> <span class="mi">1</span>
+<span class="n">mac_proj</span><span class="o">.</span><span class="n">verbose</span>        <span class="o">=</span> <span class="mi">1</span>
+
+<span class="c1"># mac_proj.mac_tol        = 0.1</span>
+<span class="c1"># mac_proj.mac_abs_tol    = 0.1</span>
+
+<span class="c1">#*******************************************************************************</span>
+
+<span class="c1"># Sets the &quot;amr&quot; code to be verbose</span>
+<span class="n">amr</span><span class="o">.</span><span class="n">v</span>                   <span class="o">=</span> <span class="mi">1</span>
+
+<span class="c1">#*******************************************************************************</span>
+
+<span class="c1"># Interval (in number of coarse timesteps) between checkpoint(restart) files</span>
+
+<span class="n">amr</span><span class="o">.</span><span class="n">check_int</span>               <span class="o">=</span> <span class="mi">4000</span>
+
+<span class="c1">#amr.restart             = chk01400</span>
+
+<span class="c1">#*******************************************************************************</span>
+
+<span class="c1"># Interval (in number of coarse timesteps) between plot files</span>
+<span class="n">amr</span><span class="o">.</span><span class="n">plot_int</span>                <span class="o">=</span> <span class="mi">1</span>
+
+
+<span class="c1">#*******************************************************************************</span>
+
+<span class="c1"># Viscosity coefficient</span>
+<span class="n">ns</span><span class="o">.</span><span class="n">vel_visc_coef</span>        <span class="o">=</span> <span class="mf">0.01</span>
+
+<span class="c1">#*******************************************************************************</span>
+
+<span class="c1"># Diffusion coefficient for first scalar</span>
+<span class="n">ns</span><span class="o">.</span><span class="n">scal_diff_coefs</span>      <span class="o">=</span> <span class="mf">0.0</span>
+
+<span class="c1">#*******************************************************************************</span>
+
+<span class="c1"># Forcing term defaults to  rho * abs(gravity) &quot;down&quot;</span>
+<span class="n">ns</span><span class="o">.</span><span class="n">gravity</span>              <span class="o">=</span> <span class="mf">0.0</span> <span class="c1"># -9.8</span>
+
+<span class="c1">#*******************************************************************************</span>
+
+<span class="c1"># skip level_projector</span>
+<span class="n">ns</span><span class="o">.</span><span class="n">skip_level_projector</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="c1">#*******************************************************************************</span>
+
+<span class="c1"># subcycling vs. non-subcycling</span>
+<span class="n">amr</span><span class="o">.</span><span class="n">subcycling_mode</span>     <span class="o">=</span> <span class="kc">None</span>
+
+<span class="c1">#*******************************************************************************</span>
+
+<span class="c1"># Set to 0 if x-y coordinate system, set to 1 if r-z.</span>
+<span class="n">geometry</span><span class="o">.</span><span class="n">coord_sys</span>   <span class="o">=</span>  <span class="mi">0</span>
+
+<span class="c1">#*******************************************************************************</span>
+
+<span class="c1"># Physical dimensions of the low end of the domain.</span>
+<span class="n">geometry</span><span class="o">.</span><span class="n">prob_lo</span>     <span class="o">=</span>  <span class="mf">0.</span> <span class="mf">0.</span> <span class="mf">0.</span>
+
+<span class="c1"># Physical dimensions of the high end of the domain.</span>
+<span class="n">geometry</span><span class="o">.</span><span class="n">prob_hi</span>     <span class="o">=</span>  <span class="mf">20.</span> <span class="mf">10.</span> <span class="mf">10.</span>
+
+<span class="c1">#*******************************************************************************</span>
+
+<span class="c1">#Set to 1 if periodic in that direction</span>
+<span class="n">geometry</span><span class="o">.</span><span class="n">is_periodic</span> <span class="o">=</span>  <span class="mi">0</span> <span class="mi">1</span> <span class="mi">1</span>
+
+<span class="c1">#*******************************************************************************</span>
+
+<span class="c1"># Boundary conditions on the low end of the domain.</span>
+<span class="n">ns</span><span class="o">.</span><span class="n">lo_bc</span>             <span class="o">=</span> <span class="mi">1</span> <span class="mi">0</span> <span class="mi">0</span>
+
+<span class="c1"># Boundary conditions on the high end of the domain.</span>
+<span class="n">ns</span><span class="o">.</span><span class="n">hi_bc</span>             <span class="o">=</span> <span class="mi">2</span> <span class="mi">0</span> <span class="mi">0</span>
+
+<span class="c1"># 0 = Interior/Periodic  3 = Symmetry</span>
+<span class="c1"># 1 = Inflow             4 = SlipWall</span>
+<span class="c1"># 2 = Outflow            5 = NoSlipWall</span>
+
+<span class="c1"># Boundary condition</span>
+<span class="n">xlo</span><span class="o">.</span><span class="n">velocity</span>            <span class="o">=</span>   <span class="mf">1.</span>  <span class="mf">0.</span>  <span class="mf">0.</span>
+
+<span class="c1">#*******************************************************************************</span>
+
+<span class="c1"># Problem parameters</span>
+<span class="n">prob</span><span class="o">.</span><span class="n">probtype</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="c1">#*******************************************************************************</span>
+
+<span class="c1"># Add vorticity to the variables in the plot files.</span>
+<span class="c1"># amr.derive_plot_vars    = avg_pressure</span>
+
+<span class="c1">#*******************************************************************************</span>
+<span class="n">ns</span><span class="o">.</span><span class="n">isolver</span>            <span class="o">=</span> <span class="mi">1</span>
+<span class="n">ns</span><span class="o">.</span><span class="n">do_diffused_ib</span>     <span class="o">=</span> <span class="mi">1</span>
+<span class="n">ns</span><span class="o">.</span><span class="n">fluid_rho</span>          <span class="o">=</span> <span class="mf">1.0</span>
+
+<span class="c1">#ns.sum_interval       = 1</span>
+
+<span class="n">particles</span><span class="o">.</span><span class="n">do_nspc_particles</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="n">nodal_proj</span><span class="o">.</span><span class="n">proj_tol</span> <span class="o">=</span> <span class="mf">1.e-8</span>
+<span class="n">nodal_proj</span><span class="o">.</span><span class="n">proj_abs_tol</span> <span class="o">=</span> <span class="mf">1.e-9</span>
+
+<span class="n">nodal_proj</span><span class="o">.</span><span class="n">maxiter</span> <span class="o">=</span> <span class="mi">200</span>
+<span class="n">nodal_proj</span><span class="o">.</span><span class="n">bottom_maxiter</span> <span class="o">=</span> <span class="mi">200</span>
+
+<span class="n">mac_proj</span><span class="o">.</span><span class="n">mac_tol</span> <span class="o">=</span> <span class="mf">1.e-8</span>
+<span class="n">mac_proj</span><span class="o">.</span><span class="n">mac_abs_tol</span> <span class="o">=</span> <span class="mf">1.e-9</span>
+
+
+<span class="c1">############################</span>
+<span class="c1">#                          #</span>
+<span class="c1">#  Diffused IB cfg file    #</span>
+<span class="c1">#                          #</span>
+<span class="c1">############################</span>
+
+<span class="c1"># particle&#39;s location</span>
+<span class="c1"># x = p1x p2x p3x ...</span>
+<span class="n">particle_inputs</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="mf">5.0</span>
+<span class="n">particle_inputs</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="mf">5.0</span>
+<span class="n">particle_inputs</span><span class="o">.</span><span class="n">z</span> <span class="o">=</span> <span class="mf">5.0</span>
+
+<span class="c1"># particle&#39;s density</span>
+<span class="c1"># rho = p1r p2r p3r ...</span>
+<span class="n">particle_inputs</span><span class="o">.</span><span class="n">rho</span> <span class="o">=</span> <span class="mf">1.0</span>
+
+<span class="c1"># particle&#39;s radius</span>
+<span class="c1"># single</span>
+<span class="n">particle_inputs</span><span class="o">.</span><span class="n">radius</span> <span class="o">=</span> <span class="mf">0.5</span>
+
+<span class="c1"># particle&#39;s velocity</span>
+<span class="c1"># vx = p1vx p2vx p3vx ...</span>
+<span class="n">particle_inputs</span><span class="o">.</span><span class="n">velocity_x</span> <span class="o">=</span> <span class="mf">0.0</span>
+<span class="n">particle_inputs</span><span class="o">.</span><span class="n">velocity_y</span> <span class="o">=</span> <span class="mf">0.0</span>
+<span class="n">particle_inputs</span><span class="o">.</span><span class="n">velocity_z</span> <span class="o">=</span> <span class="mf">0.0</span>
+
+<span class="c1"># particle&#39;s omega</span>
+<span class="c1"># omega = p1omega_x p2omega_x p3omega_x ...</span>
+<span class="n">particle_inputs</span><span class="o">.</span><span class="n">omega_x</span> <span class="o">=</span> <span class="mf">0.0</span>
+<span class="n">particle_inputs</span><span class="o">.</span><span class="n">omega_y</span> <span class="o">=</span> <span class="mf">0.0</span>
+<span class="n">particle_inputs</span><span class="o">.</span><span class="n">omega_z</span> <span class="o">=</span> <span class="mf">0.0</span>
+
+<span class="c1"># particle&#39;s 6DOF</span>
+<span class="c1"># TLX = p1tl p2tl ...</span>
+<span class="n">particle_inputs</span><span class="o">.</span><span class="n">TLX</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">particle_inputs</span><span class="o">.</span><span class="n">TLY</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">particle_inputs</span><span class="o">.</span><span class="n">TLZ</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">particle_inputs</span><span class="o">.</span><span class="n">RLX</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">particle_inputs</span><span class="o">.</span><span class="n">RLY</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">particle_inputs</span><span class="o">.</span><span class="n">RLZ</span> <span class="o">=</span> <span class="mi">0</span>
+
+
+<span class="c1"># msg print</span>
+<span class="n">particle_inputs</span><span class="o">.</span><span class="n">verbose</span> <span class="o">=</span> <span class="mi">1</span>
+</pre></div>
+</div>
+<p>If you want to know more about the parameters, you can check the <a class="reference external" href="https://amrex-codes.github.io/amrex/docs_html/">AMReX</a>.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Introduction_Chapter.html" class="btn btn-neutral float-left" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Results.html" class="btn btn-neutral float-right" title="Validation Cases" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, IAMReX.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,205 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Validation Cases &mdash; IAMReX 0.1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=01f34227"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Acknowledgements" href="Acknowledgements.html" />
+    <link rel="prev" title="Getting Started" href="Getting_Started.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            IAMReX
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Introduction_Chapter.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Getting_Started.html">Getting Started</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Validation Cases</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#flow-past-fixed-sphere">Flow Past Fixed Sphere</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cluster-of-monodisperse-particles">Cluster of monodisperse particles</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Acknowledgements.html">Acknowledgements</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">References:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">IAMReX</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Validation Cases</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/Results.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="validation-cases">
+<span id="chap-results"></span><h1>Validation Cases<a class="headerlink" href="#validation-cases" title="Link to this heading"></a></h1>
+<section id="flow-past-fixed-sphere">
+<h2>Flow Past Fixed Sphere<a class="headerlink" href="#flow-past-fixed-sphere" title="Link to this heading"></a></h2>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="_images/FlowPastSphere.png"><img alt="_images/FlowPastSphere.png" src="_images/FlowPastSphere.png" style="width: 5.0in;" />
+</a>
+<figcaption>
+<p><span class="caption-text">The schematic of the flow passing through the spherical particles</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>we validate the accuracy and efficacy of our adaptive solver by simulating a spherical particle in uniform flow with different particle Reynolds numbers. The diameter of the particle is <span class="math notranslate nohighlight">\(D_p = 1\)</span>, the computational domain is <span class="math notranslate nohighlight">\(L_x \times L_y \times L_z = 20D_p \times 10D_p \times 10D_p\)</span>, the distance of the particle from the inlet is <span class="math notranslate nohighlight">\(d = 5D_p\)</span> and located in the center of the yz plane. The inlet and outlet boundaries are applied in the x direction and the inlet velocity <span class="math notranslate nohighlight">\(U\)</span> is <span class="math notranslate nohighlight">\(1m/s\)</span>. Both y and z directions are periodic boundaries.</p>
+<p>The influence of AMR on the simulation results is investigated by using the subcycling method with different levels. As shown in Fig.</p>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="_images/FlowPastSphereResult.png"><img alt="_images/FlowPastSphereResult.png" src="_images/FlowPastSphereResult.png" style="width: 5.0in;" />
+</a>
+<figcaption>
+<p><span class="caption-text">The drag coefficient of the particle under uniform flows varies with Particle Reynolds number at different AMR levels.</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Three different types of grid were selected: level 0 indicates the single-level grid containing no AMR, level 1 indicates the two-level grid, and level 2 indicates the three-level grid. For all three types of grid, the ratio of the diameter of the particles to the grid spacing on the finest level is 16. The drag force, including the contributions of Lagrangian force and the PVF function, is calculated by</p>
+<div class="math notranslate nohighlight">
+\[\mathbf{F}_D=-\rho_f \sum_{l=1}^{N_L} \mathbf{F}_l^{n+1/2} \Delta V_l+\rho_f \frac{d}{d t}\left(\int_{V_p} \mathbf{u} d V\right),\]</div>
+<p>The theoretical S-N law for calculating the drag coefficient of the shaped particles is</p>
+<div class="math notranslate nohighlight">
+\[C_D = (24/Re_p)(1+0.15Re_p^{0.687}),\]</div>
+<p>which is proposed by schiller etal, and <span class="math notranslate nohighlight">\(Re_p = UD_p/\nu\)</span> represents the particle Reynolds number. It can be seen from above Fig that the present results under different particle Reynolds numbers are in good agreement with S-N law. The fact that different levels of grid produce the nearly identical results validated the accuracy of our solver on the adaptive grid.</p>
+</section>
+<section id="cluster-of-monodisperse-particles">
+<h2>Cluster of monodisperse particles<a class="headerlink" href="#cluster-of-monodisperse-particles" title="Link to this heading"></a></h2>
+<p>We demonstrate the accuracy and efficacy of our codes for simulating clusters of particles on the multi-level grid. As shown in Fig</p>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="_images/MonodisperseParticlesAMR.png"><img alt="_images/MonodisperseParticlesAMR.png" src="_images/MonodisperseParticlesAMR.png" style="width: 7.0in;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Monodisperse particles on a three-level AMR grid</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>80 particles of diameter <span class="math notranslate nohighlight">\(D = 1\)</span> are randomly distributed in a channel of size <span class="math notranslate nohighlight">\(L_x\times L_y \times L_z = 10\times 20 \times 10\)</span>. To choose an optimal interaction number <span class="math notranslate nohighlight">\(N_s\)</span> in this complex configuration, the maximum error of the no-slip boundary condition among 80 particles is tested with a unit flow field <span class="math notranslate nohighlight">\(u=(1,0,0)\)</span>.the maximum error of no-slip condition decreases as <span class="math notranslate nohighlight">\(N_s\)</span> increases and it is strongly reduced for <span class="math notranslate nohighlight">\(N_s=2\)</span>. According to the selection suggestions provided by Breugem etal, <span class="math notranslate nohighlight">\(N_s=2\)</span> is the optimal value for balancing the accuracy of the no-slip boundary and the computational efficiency. After determining <span class="math notranslate nohighlight">\(N_s\)</span>, the fluid flow is driven by applying a pressure gradient of 1.0 in the z direction. This case can represent a porous medium with a volume fraction of 0.02. Three levels of the AMR grid is applied. The grid resolution on the finest level is <span class="math notranslate nohighlight">\(d/h=16\)</span>. Since the multi-direct forcing immersed boundary method and fictitious domain method require cube grid cells, the grid cell requirement is equals to case 1 in Table.</p>
+<blockquote>
+<div><table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>case</p></th>
+<th class="head"><p>level 0</p></th>
+<th class="head"><p>level 1</p></th>
+<th class="head"><p>level 2</p></th>
+<th class="head"><p>Total cells</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>8192000</p></td>
+<td></td>
+<td></td>
+<td><p>8192000</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>128000</p></td>
+<td><p>534656</p></td>
+<td><p>1593664</p></td>
+<td><p>2256320</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>Compared with them, our algorithm has a 72.5% grid reduction with <span class="math notranslate nohighlight">\(d/h=16\)</span>. And it has a 62.5% Lagrangian markers reduction compared with the DLM method with <span class="math notranslate nohighlight">\(d/h=16\)</span>.</p>
+<p>When the simulation reaches the steady state, the total pressure drop balances the IB force generated by all particles in the streamwise z direction. Following the equation in akiki etal, the theoretical drag force is given by</p>
+<div class="math notranslate nohighlight">
+\[F_{theory} = (\frac{\Delta p}{\Delta z}L_z)L_xL_y\]</div>
+<p>Fig represents the velocity contour of three different interfaces in the x direction at the steady state.</p>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="_images/MonodispersSliceResult.png"><img alt="_images/MonodispersSliceResult.png" src="_images/MonodispersSliceResult.png" style="width: 5.0in;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Contours of velocity magnitude in <span class="math notranslate nohighlight">\(yz\)</span> plane at the different x position: (a) x=2.5; (b) x=5.0; (c) x=7.5</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>The flow passes around the particles and generates the wakes behind. Fig. shows the time series of total IB force for all particles. The resistance gradually reaches a steady state after 40000 steps. In this case, the theoretical value of drag force given by <span class="math notranslate nohighlight">\(F_{theory}\)</span> is 2000, while the present average values at steady state with <span class="math notranslate nohighlight">\(N_s=2\)</span> and 4 are all converged around 2000. It indicates that <span class="math notranslate nohighlight">\(N_s=2\)</span> is sufficient for this case. And the agreement between theory and present results validates the accuracy of our proposed framework in dealing with large amounts of particles in the fluid system.</p>
+<figure class="align-center" id="id5">
+<a class="reference internal image-reference" href="_images/MonodispersPDrop.png"><img alt="_images/MonodispersPDrop.png" src="_images/MonodispersPDrop.png" style="width: 5.0in;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Comparison of total drag force between the theory and present results with different <span class="math notranslate nohighlight">\(N_s=2\)</span></span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Getting_Started.html" class="btn btn-neutral float-left" title="Getting Started" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Acknowledgements.html" class="btn btn-neutral float-right" title="Acknowledgements" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, IAMReX.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
