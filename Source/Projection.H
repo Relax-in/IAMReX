@@ -42,6 +42,15 @@ public:
                 int    _radius_grow );
 
     //
+    // No destructor is declared on purpose. Every pointer member of this class
+    // is non-owning: parent is the Amr object, while phys_bc and the entries of
+    // radius point into NavierStokesBase. The implicitly generated destructor
+    // is therefore already correct, and declaring one, even as = default, would
+    // suppress the implicit move operations and pull the class into the rule of
+    // five.
+    //
+
+    //
     // Set a level in the projector.
     //
     void install_level (int                   level,
