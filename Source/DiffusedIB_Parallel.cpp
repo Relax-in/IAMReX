@@ -116,6 +116,7 @@ void nodal_phi_to_pvf(MultiFab& pvf, const MultiFab& phi_nodal)
 
 }
 
+// Only for sphere particles
 void calculate_phi_nodal(MultiFab& phi_nodal, kernel& current_kernel)
 {
     phi_nodal.setVal(0.0);
